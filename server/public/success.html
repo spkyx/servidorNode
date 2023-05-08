@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gracias por tu compra!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="query()">
+  <section>
+    <p>
+      Apreciamos tu eleccion. Si tienes alguna duda escribenos al siguiente correo
+      <a href="mailto:orders@example.com">orders@example.com</a>.
+    </p>
+  </section>
+  <script>
+    function query()
+    {
+      var http = new XMLHttpRequest();
+      http.open("GET","http://localhost:3000/updateQ",true);
+      http.send(null);
+    }
+  </script>
+</body>
+</html>
